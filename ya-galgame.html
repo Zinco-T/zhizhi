@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>北京夏日晴 — 牙 · Galgame</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #0a0a12;
+      font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+    .title-bar {
+      color: #aaa;
+      margin-bottom: 10px;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+    }
+    .title-bar span { color: #f0c060; }
+    #vn-container {
+      width: 100%;
+      max-width: 960px;
+      height: 640px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 50px rgba(240, 192, 96, 0.08);
+    }
+    @media (max-width: 600px) {
+      #vn-container { height: 100vh; border-radius: 0; }
+      .title-bar { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="title-bar">🎮 <span>北京夏日晴</span> — 基于真人聊天蒸馏的 Galgame</div>
+  <div id="vn-container"></div>
+
+  <script type="module">
+    import { VisualNovelEngine } from './engine.js';
+    import storyData from './ya-galgame-story.js';
+
+    const vn = new VisualNovelEngine(storyData, {
+      textSpeed: 35,
+      onEnd(nodeId, vars) {
+        const aff = vars.affection || 0;
+        const msg = aff >= 15 ? '💫 真结局达成！' : aff >= 5 ? '🌤️ 普通结局' : '🌙 平淡结局';
+        console.log(`结局: ${nodeId}, 好感度: ${aff}, ${msg}`);
+      },
+      onChoiceMade(choice) {
+        const aff = choice.affection || 0;
+        if (aff >= 5) console.log('💕 好感度大幅上升！');
+        else if (aff > 0) console.log('💛 好感度上升');
+        else if (aff < 0) console.log('💔 好感度下降');
+      },
+    });
+
+    vn.start();
+    console.log('🎮 北京夏日晴 — Galgame 启动！');
+    console.log('💡 点击画面推进 | 数字键选选项 | Esc 看历史');
+  </script>
+</body>
+</html>

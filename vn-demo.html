@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>星光下的约定 — Visual Novel Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #0a0a0f;
+      font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+    .demo-header {
+      color: #888;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+    .demo-header span {
+      color: #f0c060;
+    }
+    #vn-container {
+      width: 100%;
+      max-width: 960px;
+      height: 640px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(240, 192, 96, 0.1);
+    }
+    .demo-footer {
+      margin-top: 12px;
+      color: #555;
+      font-size: 0.75rem;
+    }
+    @media (max-width: 600px) {
+      #vn-container {
+        height: 100vh;
+        border-radius: 0;
+      }
+      .demo-header, .demo-footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-header">🎮 <span>Visual Novel Engine</span> Demo</div>
+  <div id="vn-container"></div>
+  <div class="demo-footer">点击画面推进 · 数字键选择选项 · Esc 查看历史</div>
+
+  <script type="module">
+    import { VisualNovelEngine } from './engine.js';
+    import storyData from './sample-story.js';
+
+    // Initialize engine
+    const vn = new VisualNovelEngine(storyData, {
+      textSpeed: 35,
+      autoAdvanceDelay: 3000,
+
+      onNodeChange(node, nodeId) {
+        console.log(`[Node] ${nodeId} — ${node.speaker || '(narration)'}`);
+      },
+
+      onChoiceMade(choice, nodeId, index) {
+        console.log(`[Choice] #${index + 1} "${choice.text}" → ${choice.next}, affection ${choice.affection > 0 ? '+' : ''}${choice.affection}`);
+      },
+
+      onVariableChange(name, value, oldValue) {
+        console.log(`[Var] ${name}: ${oldValue} → ${value}`);
+      },
+
+      onTextComplete(node, nodeId) {
+        // console.log(`[Text] done: ${nodeId}`);
+      },
+
+      onEnd(nodeId, variables) {
+        console.log(`[End] Story finished at "${nodeId}". Final affection: ${variables.affection}`);
+        const endingType = variables.affection >= 10 ? 'True Ending 💫' : 'Normal Ending 🌙';
+        console.log(`[End] ${endingType}`);
+      },
+    });
+
+    // Start the story
+    vn.start();
+
+    // Expose to devtools for debugging
+    window.__vn = vn;
+  </script>
+</body>
+</html>
