@@ -207,6 +207,7 @@ const storyData = {
       speaker: "",
       text: "她没有再提起刚才的事。但你注意到——吃完饭离开时，她的草稿本从书包里露出一角。\n\n上面画着两个男人。\n\n画得很好。",
       background: "backgrounds/bg_restaurant_green.jpg",
+      sprite: { image: "sprites/sprite_soften.png", position: "right" },
       next: "train_trip",
     },
 
@@ -357,6 +358,7 @@ const storyData = {
       speaker: "",
       text: "傍晚的摩天轮亮起来，像一枚悬在城市上空的戒指。\n\n之之站在你旁边，忽然开口——",
       background: "backgrounds/bg_ferriswheel.jpg",
+      sprite: { image: "sprites/sprite_serious.png", position: "right" },
       next: "ferriswheel_talk",
     },
 
