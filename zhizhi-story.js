@@ -117,7 +117,7 @@ const storyData = {
       speaker: "之之",
       text: "今天观察的是洋葱表皮细胞。\n\n……你在看什么？",
       background: "backgrounds/bg_classroom_board.jpg",
-      sprite: { image: "sprites/sprite_serious.png", position: "right" },
+      sprite: { image: "sprites/sprite_nervous.png", position: "right" },
       choices: [
         {
           text: "「看你怎么调显微镜。你手法很厉害。」",
@@ -180,7 +180,7 @@ const storyData = {
       speaker: "之之",
       text: "……你坐吧。\n\n（她很快地把手机翻了过去，屏幕朝下）",
       background: "backgrounds/bg_restaurant_green.jpg",
-      sprite: { image: "sprites/sprite_serious.png", position: "right" },
+      sprite: { image: "sprites/sprite_nervous.png", position: "right" },
       choices: [
         {
           text: "坐过去，聊实验课的事。不提别的。",
@@ -214,7 +214,7 @@ const storyData = {
       speaker: "之之",
       text: "没什么。就是个……漫画。\n\n你不感兴趣的。",
       background: "backgrounds/bg_restaurant_green.jpg",
-      sprite: { image: "sprites/sprite_serious.png", position: "right" },
+      sprite: { image: "sprites/sprite_nervous.png", position: "right" },
       next: "train_trip",
     },
 
@@ -302,7 +302,7 @@ const storyData = {
       speaker: "之之",
       text: "你知道为什么我画的东西里，背景总出现这些吗？\n\n（她指着龙壁上的琉璃龙纹）\n\n因为美的东西就该和美的在一起。不管别人怎么说。",
       background: "backgrounds/bg_jiulongbi.jpg",
-      sprite: { image: "sprites/sprite_happy.png", position: "right" },
+      sprite: { image: "sprites/sprite_smile.png", position: "right" },
       choices: [
         {
           text: "「你说的对。」",
@@ -329,7 +329,7 @@ const storyData = {
       speaker: "之之",
       text: "……我自己也不知道。\n\n但至少画的时候，我是开心的。\n\n（她转过去看龙壁，但你听到她笑了——很轻，很短，却真实。）",
       background: "backgrounds/bg_jiulongbi.jpg",
-      sprite: { image: "sprites/sprite_nervous.png", position: "right" },
+      sprite: { image: "sprites/sprite_soften.png", position: "right" },
       next: "return_scene",
     },
 
@@ -337,7 +337,7 @@ const storyData = {
       speaker: "",
       text: "回程的火车上，天色渐暗。\n\n之之靠着窗睡着了。她的草稿本没有再掉出来。\n\n但你看到本子的边角上，多了一行很小的字——\n\n「今天有人看懂了我的画。」",
       background: "backgrounds/bg_station.jpg",
-      sprite: { image: "sprites/sprite_soften.png", position: "center" },
+      sprite: { image: "sprites/sprite_shy.png", position: "center" },
       next: "night_date",
     },
 
@@ -412,7 +412,7 @@ const storyData = {
       speaker: "",
       text: "摩天轮缓缓转到了最高点。\n\n整座城市的灯光在脚下铺开。\n\n之之往你这边挪了半步。",
       background: "backgrounds/bg_ferriswheel.jpg",
-      sprite: { image: "sprites/sprite_serious.png", position: "right" },
+      sprite: { image: "sprites/sprite_shy.png", position: "right" },
       next: "final_choice",
     },
 
@@ -424,7 +424,7 @@ const storyData = {
       speaker: "之之",
       text: "喂。\n\n如果我说——\n\n我下一期的漫画，想画一个我和你的故事。\n\n……你会怎么想？",
       background: "backgrounds/bg_ferriswheel.jpg",
-      sprite: { image: "sprites/sprite_serious.png", position: "center" },
+      sprite: { image: "sprites/sprite_shy.png", position: "center" },
       choices: [
         {
           text: "「那我帮你画背景。我生物实验报告画得还不错。」",
@@ -452,7 +452,7 @@ const storyData = {
       speaker: "之之",
       text: "……噗。生物实验报告画背景。\n\n亏你想得出来。\n\n（她摘下眼镜擦了擦眼角，但这次是因为笑。）\n\n行。那从明天开始——\n\n你就是「午夜试管」的官方背景师了。\n\n工资嘛……每天帮你调显微镜，够不够？",
       background: "backgrounds/bg_ferriswheel.jpg",
-      sprite: { image: "sprites/sprite_serious.png", position: "center" },
+      sprite: { image: "sprites/sprite_laugh.png", position: "center" },
       next: "true_ending_text",
     },
 
@@ -466,7 +466,7 @@ const storyData = {
       speaker: "之之",
       text: "……剧情啊。\n\n那当然是从一个傻逼在生物课上盯着我看开始。\n\n（她笑了笑，但眼睛没有真结局那么亮）\n\n……下次告诉你。等我画完。",
       background: "backgrounds/bg_ferriswheel.jpg",
-      sprite: { image: "sprites/sprite_laugh.png", position: "right" },
+      sprite: { image: "sprites/sprite_smile.png", position: "right" },
       next: "normal_ending_text",
     },
 
@@ -480,7 +480,7 @@ const storyData = {
       speaker: "之之",
       text: "…………\n\n（她没有说话。也没有抽回手。）\n\n（摩天轮开始缓缓下降。你们的影子映在车窗上，叠在一起。）\n\n6。\n\n……这是她说过的最温柔的一个「6」。",
       background: "backgrounds/bg_ferriswheel.jpg",
-      sprite: { image: "sprites/sprite_serious.png", position: "center" },
+      sprite: { image: "sprites/sprite_shy.png", position: "center" },
       next: "silent_ending_text",
     },
 
