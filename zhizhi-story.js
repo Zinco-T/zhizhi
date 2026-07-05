@@ -46,7 +46,7 @@ const storyData = {
       speaker: "",
       text: "第二天，生物课。\n\n之之像往常一样在讲台上做 pre，讲细胞全能性，语气平稳，逻辑滴水不漏。\n\n你盯着她的侧脸，脑子里全是昨晚看到的那些画。",
       background: "backgrounds/bg_classroom_board.jpg",
-      sprite: { image: "sprites/sprite_normal.png", position: "right" },
+      sprite: { image: "sprites/sprite_lab_focus.png", position: "right" },
       next: "after_class",
     },
 
@@ -109,7 +109,7 @@ const storyData = {
       speaker: "",
       text: "下午实验课。之之像往常一样分到了你旁边。\n\n她调显微镜的动作一如既往地稳。但你注意到——她的草稿本压在课本下面，封面朝下。",
       background: "backgrounds/bg_classroom_board.jpg",
-      sprite: { image: "sprites/sprite_normal.png", position: "right" },
+      sprite: { image: "sprites/sprite_lab_focus.png", position: "right" },
       next: "lab_choice",
     },
 
@@ -117,7 +117,7 @@ const storyData = {
       speaker: "之之",
       text: "今天观察的是洋葱表皮细胞。\n\n……你在看什么？",
       background: "backgrounds/bg_classroom_board.jpg",
-      sprite: { image: "sprites/sprite_normal.png", position: "right" },
+      sprite: { image: "sprites/sprite_lab_focus.png", position: "right" },
       choices: [
         {
           text: "「看你怎么调显微镜。你手法很厉害。」",
