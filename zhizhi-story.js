@@ -171,7 +171,7 @@ const storyData = {
     cafeteria_scene: {
       speaker: "",
       text: "中午食堂。之之一个人坐在窗边，面前的红烧肉几乎没动。\n\n她戴着耳机，手指在手机屏幕上飞快地划着。\n\n你端着餐盘走过去。她抬头的时候，手机屏幕闪了一下——你瞥到了熟悉的画风。",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       sprite: { image: "sprites/sprite_cafeteria_eat.jpg", position: "right" },
       next: "cafeteria_choice",
     },
@@ -179,7 +179,7 @@ const storyData = {
     cafeteria_choice: {
       speaker: "之之",
       text: "……你坐吧。\n\n（她很快地把手机翻了过去，屏幕朝下）",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       sprite: { image: "sprites/sprite_cafeteria_eat.jpg", position: "right" },
       choices: [
         {
@@ -206,14 +206,14 @@ const storyData = {
     cafeteria_safe: {
       speaker: "",
       text: "她没有再提起刚才的事。但你注意到——吃完饭离开时，她的草稿本从书包里露出一角。\n\n上面画着两个男人。\n\n画得很好。",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       next: "train_trip",
     },
 
     cafeteria_push: {
       speaker: "之之",
       text: "没什么。就是个……漫画。\n\n你不感兴趣的。",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       sprite: { image: "sprites/sprite_street_shy.jpg", position: "right" },
       next: "train_trip",
     },
@@ -225,7 +225,7 @@ const storyData = {
     confrontation: {
       speaker: "之之",
       text: "…………\n\n（她的筷子停在半空中。然后慢慢放下。）\n\n……你什么时候知道的。",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       sprite: { image: "sprites/sprite_street_shy.jpg", position: "center" },
       next: "confrontation_2",
     },
@@ -233,7 +233,7 @@ const storyData = {
     confrontation_2: {
       speaker: "之之",
       text: "算了。无所谓。\n\n（她摘下眼镜，第一次直视你。你从没见她摘过眼镜。）\n\n你觉得恶心吗？觉得变态吗？想说就说。",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       sprite: { image: "sprites/sprite_serious.jpg", position: "center" },
       choices: [
         {
@@ -257,7 +257,7 @@ const storyData = {
     confrontation_good: {
       speaker: "之之",
       text: "…………\n\n（她愣了一下。然后极快地低下头，把眼镜戴回去。）\n\n……你知道我画的是什么吗就说好。",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       sprite: { image: "sprites/sprite_street_shy.jpg", position: "center" },
       next: "train_trip",
     },
@@ -265,7 +265,7 @@ const storyData = {
     confrontation_neutral: {
       speaker: "之之",
       text: "……嗯。\n\n（她没有再说什么，但你看到她的肩膀微微松了下来。）",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       sprite: { image: "sprites/sprite_school_shy.jpg", position: "right" },
       next: "train_trip",
     },
@@ -273,7 +273,7 @@ const storyData = {
     confrontation_why: {
       speaker: "之之",
       text: "告诉你？\n\n你怎么不去问我为什么要在草稿本上画两个男人接吻？\n\n……算了我自己也不知道。",
-      background: "backgrounds/bg_cafeteria.jpg",
+      background: "backgrounds/bg_restaurant_green.jpg",
       sprite: { image: "sprites/sprite_speaking.jpg", position: "center" },
       next: "train_trip",
     },
