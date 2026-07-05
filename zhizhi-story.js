@@ -285,7 +285,7 @@ const storyData = {
     train_trip: {
       speaker: "",
       text: "几天后，学校研学旅行。\n\n之之在火车上坐在你斜对面，靠着颈枕睡着了。\n\n她的草稿本从书包里滑出来，摊开在那一页——两个男人在九龙壁前接吻。\n\n你帮她合上，放在她手边。",
-      background: "backgrounds/bg_train_seat.jpg",
+      background: "backgrounds/bg_station.jpg",
       sprite: { image: "sprites/sprite_serious.png", position: "right" },
       next: "yunzhou_scene",
     },
@@ -336,7 +336,7 @@ const storyData = {
     return_scene: {
       speaker: "",
       text: "回程的火车上，天色渐暗。\n\n之之靠着窗睡着了。她的草稿本没有再掉出来。\n\n但你看到本子的边角上，多了一行很小的字——\n\n「今天有人看懂了我的画。」",
-      background: "backgrounds/bg_train_seat.jpg",
+      background: "backgrounds/bg_station.jpg",
       sprite: { image: "sprites/sprite_serious.png", position: "center" },
       next: "night_date",
     },
