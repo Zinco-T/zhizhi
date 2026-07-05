@@ -348,7 +348,7 @@ const storyData = {
     night_date: {
       speaker: "",
       text: "回到锦城后，之之约你出来。\n\n春熙坊的店铺一家家亮起来。她戴着狗耳朵帽子，在人群里显得格外安静。",
-      background: "backgrounds/bg_xintiandi.jpg",
+      background: "backgrounds/bg_city_street.jpg",
       sprite: { image: "sprites/sprite_serious.png", position: "right" },
       next: "ferriswheel_scene",
     },
